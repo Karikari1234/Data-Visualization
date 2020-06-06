@@ -1,0 +1,26 @@
+{
+  "name": "data-visualization",
+  "version": "1.0.0",
+  "description": "A simple webpage that renders all the kinds of data u want to give it to.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Karikari1234/Data-Visualization.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Karikari1234/Data-Visualization/issues"
+  },
+  "homepage": "https://github.com/Karikari1234/Data-Visualization#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "csvtojson": "^2.0.10"
+  }
+}
