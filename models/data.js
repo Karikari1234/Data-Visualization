@@ -64,4 +64,5 @@ async function saveData(jsonArray) {
 
 module.exports = {
   saveData,
+  Data,
 };

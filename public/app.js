@@ -4,3 +4,14 @@ d3.select("div")
   .enter()
   .append("p")
   .text((data) => data);
+
+fetch("http://localhost:3000/")
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    console.log(data);
+  })
+  .catch(function (err) {
+    console.warn("Something went wrong.", err);
+  });
