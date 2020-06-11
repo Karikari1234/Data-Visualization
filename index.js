@@ -3,6 +3,7 @@ const csv = require("csvtojson");
 const { mongooseConnect } = require("./db/mongoose");
 const { saveData, Data } = require("./models/data");
 const express = require("express");
+const path = require("path");
 
 const app = express();
 
@@ -15,10 +16,12 @@ async function func() {
 }
 
 //func();
+const publicDirectoryPath = path.join(__dirname, "./public");
+app.use(express.static(publicDirectoryPath));
 
-app.get("/", async (req, res) => {
+app.get("/data", async (req, res) => {
   try {
-    const data = await Data.find({ Year: "2018" });
+    const data = await Data.find();
     if (!data) {
       console.log("notfound");
       res.status(404).send("Not found");

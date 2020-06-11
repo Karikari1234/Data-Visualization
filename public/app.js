@@ -5,7 +5,7 @@ d3.select("div")
   .append("p")
   .text((data) => data);
 
-fetch("http://localhost:3000/")
+fetch("data/")
   .then(function (response) {
     return response.json();
   })
