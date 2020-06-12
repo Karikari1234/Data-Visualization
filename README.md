@@ -1,6 +1,6 @@
 # Data Visualization
 
-I am building a data visualization website which takes user data in the form of **CSV,json or javascript object** and provies useful **insights** about the data.
+I am building a data visualization website which takes user data in the form of **CSV,json or javascript object** and provides useful **insights** about the data.
 
 I have used **NodeJS** as the backend runtime environment to get the data from a *mongoDB database* currently locally hosted. With the help of charting libraries **like D3.js** and **chart.js** I have tried to visualize the data.
 
