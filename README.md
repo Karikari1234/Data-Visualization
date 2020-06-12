@@ -16,6 +16,6 @@ It will install all the necessary dependencies. Then run:
 npm run start
 ```
 
-The server will get started on ![localhost:3000](http://localhost:3000)
+The server will get started on [localhost:3000](http://localhost:3000)
 
 ![alt text](images/image.png)
