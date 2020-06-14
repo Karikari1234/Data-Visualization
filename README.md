@@ -2,8 +2,7 @@
 
 I am building a data visualization website which takes user data in the form of **CSV,json or javascript object** and provides useful **insights** about the data.
 
-I have used **NodeJS** as the backend runtime environment to get the data from a *mongoDB database* currently locally hosted. With the help of charting libraries **like D3.js** and **chart.js** I have tried to visualize the data.
-
+I have used **NodeJS** as the backend runtime environment to get the data from a _mongoDB database_ currently locally hosted. With the help of charting libraries **like D3.js** and **chart.js** I have tried to visualize the data.
 
 In order to run the project on a NodeJS runtime,run:
 
@@ -12,6 +11,7 @@ npm install
 ```
 
 It will install all the necessary dependencies. Then run:
+
 ```
 npm run start
 ```
@@ -19,3 +19,9 @@ npm run start
 The server will get started on [localhost:3000](http://localhost:3000)
 
 ![alt text](images/image.png)
+
+Follow me on LinkedIn: [Monzur Rahman](https://www.linkedin.com/in/monzur-rahman-baba02190/)
+
+Codeforces handle: [Kari_Kari](https://codeforces.com/profile/Kari_Kari)
+
+<a href="https://www.linkedin.com/in/monzur-rahman-baba02190/"><img src="./utils/linkedin.png" width="60"></a> <a href="https://codeforces.com/profile/Kari_Kari"><img src="./utils/codeforces.png" width="60"></a>
