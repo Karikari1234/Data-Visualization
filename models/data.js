@@ -56,7 +56,7 @@ async function saveData(jsonArray) {
   });
   try {
     await newData.save();
-    console.log("done");
+    console.log(`done`);
   } catch (error) {
     console.log("Not possible");
   }
@@ -64,4 +64,5 @@ async function saveData(jsonArray) {
 
 module.exports = {
   saveData,
+  Data,
 };
