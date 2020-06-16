@@ -20,5 +20,5 @@ async function func() {
 }
 
 module.exports = {
-  app,
+  app
 };
