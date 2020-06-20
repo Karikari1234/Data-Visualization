@@ -1,0 +1,9 @@
+.head {
+  text-align: center;
+  padding: 5px;
+  background-color: beige;
+}
+
+.data {
+  position: relative;
+}
