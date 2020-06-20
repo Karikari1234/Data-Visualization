@@ -20,6 +20,6 @@ The server will get started on [localhost:3000](http://localhost:3000)
 
 ![alt text](images/image.png)
 
-Follow me on LinkedIn: [Monzur Rahman](https://www.linkedin.com/in/monzur-rahman-baba02190/)
+Follow me on LinkedIn: [Monzur Rahman](https://www.linkedin.com/in/monzur-rahman-nafiz/)
 
 <a href="https://www.linkedin.com/in/monzur-rahman-baba02190/"><img src="./images/linkedin.png" width="60"></a>
