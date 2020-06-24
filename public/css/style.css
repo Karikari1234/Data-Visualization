@@ -1,0 +1,22 @@
+.head {
+  text-align: center;
+  padding: 5px;
+  background-color: beige;
+}
+
+.data {
+  position: relative;
+}
+
+.two-button {
+  display: flex;
+  justify-content: space-between;
+  margin: 1%;
+}
+
+#myChart {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin: 20px 0px;
+}
