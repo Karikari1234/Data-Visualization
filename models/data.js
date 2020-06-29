@@ -61,8 +61,14 @@ async function saveData(jsonArray) {
     console.log("Not possible");
   }
 }
+function getDataKeys() {
+  let obj = Data.schema.tree;
+  let keys = Object.keys(obj);
+  return keys;
+}
 
 module.exports = {
   saveData,
+  getDataKeys,
   Data,
 };

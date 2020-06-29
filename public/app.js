@@ -5,6 +5,7 @@ let i = 0;
 
 dataButton.addEventListener("click", function () {
   fetchData();
+  fetchDataKeys();
   i += 10;
 });
 
@@ -29,6 +30,21 @@ function fetchData() {
         appendData(myDemo, data[j]);
       }
       i += 10;
+    })
+    .catch(function (err) {
+      console.warn("Something went wrong.", err);
+    });
+}
+
+function fetchDataKeys() {
+  fetch("data/keys")
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (keys) {
+      for (k in keys) {
+        console.log(keys[k]);
+      }
     })
     .catch(function (err) {
       console.warn("Something went wrong.", err);
