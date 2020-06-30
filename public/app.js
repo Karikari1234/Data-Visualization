@@ -1,22 +1,33 @@
 const myDemo = document.getElementById("demo");
 const dataButton = document.querySelector(".data-btn");
 const clearButton = document.querySelector(".clear-btn");
+const selectx = document.getElementById("x-axis");
+const selecty = document.getElementById("y-axis");
 let i = 0;
-
+let s_flag = 0;
+fetchDataKeys();
 dataButton.addEventListener("click", function () {
   fetchData();
-  fetchDataKeys();
+
   i += 10;
 });
 
 clearButton.addEventListener("click", function () {
+  s_flag = 0;
   myDemo.innerHTML = "";
 });
 
 function appendData(elementId, data) {
+  if (!s_flag) {
+    let listItem = document.createElement("li");
+    listItem.classList.add("listItem");
+    listItem.innerHTML = selectx.value + "        " + selecty.value;
+    elementId.appendChild(listItem);
+    s_flag = 1;
+  }
   let listItem = document.createElement("li");
   listItem.classList.add("listItem");
-  listItem.innerHTML = data.Value + " " + data.Variable_name;
+  listItem.innerHTML = data[selectx.value] + "       " + data[selecty.value];
   elementId.appendChild(listItem);
 }
 
@@ -43,7 +54,8 @@ function fetchDataKeys() {
     })
     .then(function (keys) {
       for (k in keys) {
-        console.log(keys[k]);
+        selectx.options[selectx.options.length] = new Option(keys[k], keys[k]);
+        selecty.options[selecty.options.length] = new Option(keys[k], keys[k]);
       }
     })
     .catch(function (err) {
